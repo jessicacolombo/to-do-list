@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <script defer src="/src/script.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="logo">MY TASK'S</h1>
+            <form>
+                <input type="text" id="busca" name="searchTask" placeholder="Pesquisar tarefa" >
+                <button type="submit" id="buscar"><span class="material-symbols-outlined">search</span></button>
+            </form>
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <h1>Inserir tarefa</h1>
+            <form>
+                <div>
+                <input id="new-task" type="text" name="newTask" placeholder="Digitar título da tarefa">
+                <select id="task-type" required name="taskType">
+                    <option value="">Selecionar tipo</option>
+                    <option value="a">Urgente</option>
+                    <option value="b">Prioritário</option>
+                    <option value="c">Normal</option>
+                </select>  
+                </div>
+                <button type="submit" id="botao-tarefa-nova">Adicionar Tarefa na Lista</button>
+            </form>
+        </section>
+        <section>
+            <h1>Tarefas</h1>
+            <ul class="lista-tarefas">
+               
+            </ul>
+            <div id="space-for-button-return">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
